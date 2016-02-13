@@ -1,4 +1,10 @@
-module.exports = function() {
+'use strict';
+
+require('angular');
+
+angular.module('hitch.link')
+
+.filter('link', function() {
     return function(path, env) {
         switch (env) {
             case 'merchant' :
@@ -15,4 +21,4 @@ module.exports = function() {
             break;
         }
     }
-}
+});
