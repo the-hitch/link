@@ -2,7 +2,7 @@
 
 require('angular');
 
-angular.module('hitch.link')
+angular.module('hitch.link', [])
 
 .filter('link', function() {
     return function(path, env) {
